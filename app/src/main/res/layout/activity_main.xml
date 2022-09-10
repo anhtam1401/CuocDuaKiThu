@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:background="@drawable/nen">.
+
+    <CheckBox
+        android:layout_marginBottom="10dp"
+        android:id="@+id/CheckboxDoraemon"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:layout_marginBottom="17dp"
+        android:id="@+id/checkboxShuka"
+        android:layout_above="@+id/CheckboxDoraemon"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:layout_marginBottom="20dp"
+        android:id="@+id/checkboxNobita"
+        android:layout_above="@+id/checkboxShuka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/seekbarDoraemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/CheckboxDoraemon"
+        android:thumb="@drawable/doraemon" />
+
+    <SeekBar
+        android:id="@+id/seekbarShuka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbarDoraemon"
+        android:layout_marginLeft="46dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/CheckboxShuka"
+        android:thumb="@drawable/shishuka"
+        tools:ignore="UnknownId" />
+
+    <SeekBar
+        android:id="@+id/seekbarNobita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbarShuka"
+        android:layout_toRightOf="@+id/checkboxNobita"
+        android:thumb="@drawable/nobita" />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"/>
+    <TextView
+        android:id="@+id/textviewDiemso"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/buttonPlay"
+
+        android:layout_centerInParent="true"
+        android:src="@drawable/play"
+        android:background="@drawable/doraemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
